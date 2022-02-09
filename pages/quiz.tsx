@@ -40,30 +40,22 @@ export default function Quiz() {
                </h3>
            </Box>
            <Box style={{textAlign: "center", background: "white", borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px"}}>
-           <Button variant={"contained"} style={{margin: "10px", width: "75%"}}>
-               <Stack  direction="row"  alignItems="center" spacing={2}>
-               <Avatar sx={{ width: 24, height: 24 }} alt="A" src="/static/images/avatar/1.jpg" />
-                   <a>Answer.....</a>
-               </Stack>
-           </Button>
-
-               <Button variant={"contained"} style={{margin: "10px", width: "75%"}}>
-                   <Stack  direction="row"  alignItems="center" spacing={2}>
-                       <Avatar sx={{ width: 24, height: 24 }} alt="A" src="/static/images/avatar/1.jpg" />
-                       <a>Answer.....</a>
-                   </Stack>
+               <br/>
+               <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
+                   <Avatar sx={{ width: 24, height: 24, marginRight: "15px"}} alt="A" src="/static/images/avatar/1.jpg" />
+                   <a>Answer...</a>
                </Button>
-               <Button variant={"contained"} style={{margin: "10px", width: "75%"}}>
-                   <Stack  direction="row"  alignItems="center" spacing={2}>
-                       <Avatar sx={{ width: 24, height: 24 }} alt="A" src="/static/images/avatar/1.jpg" />
-                       <a>Answer.....</a>
-                   </Stack>
+               <Button color={"success"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start" , borderRadius: "25px"}}>
+                   <Avatar sx={{ width: 24, height: 24, marginRight: "15px"}} alt="B" src="/static/images/avatar/1.jpg" />
+                   <a>Answer...</a>
                </Button>
-               <Button variant={"contained"} style={{margin: "10px", width: "75%"}}>
-                   <Stack  direction="row"  alignItems="center" spacing={2}>
-                       <Avatar sx={{ width: 24, height: 24 }} alt="A" src="/static/images/avatar/1.jpg" />
-                       <a>Answer.....</a>
-                   </Stack>
+               <Button color={"error"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
+                       <Avatar sx={{ width: 24, height: 24, marginRight: "15px"}} alt="C" src="/static/images/avatar/1.jpg" />
+                       <a>Answer...</a>
+               </Button>
+               <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
+                   <Avatar sx={{ width: 24, height: 24, marginRight: "15px"}} alt="D" src="/static/images/avatar/1.jpg" />
+                   <a>Answer...</a>
                </Button>
                <br/> <br/>
 
