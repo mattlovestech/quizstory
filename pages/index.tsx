@@ -42,13 +42,7 @@ export default function IndexPage() {
 
     <ProgressTopBar/>
     <br/>
-    <Stack  direction="row"
-            justifyContent="space-between"
-            alignItems="center" spacing={2}>
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-     <a>Quiz Name</a>
-      <MoreHorizIcon/>
-    </Stack>
+
     <Stack spacing={2}>
       <a>Item 1</a>
       <a>Item 2</a>
