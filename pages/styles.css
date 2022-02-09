@@ -1,0 +1,34 @@
+body {
+  font-family: -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+    sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 0 1rem 1rem 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  /*background-image: url('https://media4.giphy.com/media/YtK26h4kujo9kDRRqj/giphy.gif?cid=ecf05e47d986c120v05d4aihdw7mg7gkolshqt61lamj707n&rid=giphy.gif');*/
+  background-image: url('https://media1.giphy.com/media/pOLspHmrKmQmc/giphy.gif?cid=ecf05e47mt0ym24xu07n7p83r1ce9fumsapizevxgxov16d0&rid=giphy.gif&ct=g');
+  background-size: cover;
+  color: #333;
+}
+
+li,
+p {
+  line-height: 1.5rem;
+}
+
+a {
+  font-weight: 500;
+}
+
+hr {
+  border: 1px solid #ddd;
+}
+
+iframe {
+  background: #ccc;
+  border: 1px solid #ccc;
+  height: 10rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  filter: invert(1);
+}
