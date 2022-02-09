@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header>
-      <LinearWithValueLabel/>
+
       <noscript>
         <style>{`.nojs-show { opacity: 1; top: 0; }`}</style>
       </noscript>

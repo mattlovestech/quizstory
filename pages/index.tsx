@@ -4,8 +4,9 @@ import Head from 'next/head'
 import Button from '@mui/material/Button'
 import {Stack} from "@mui/material";
 import SmallAvatar from "@mui/material/Avatar";
-import Badge from "@mui/material/Badge";
+
 import Avatar from "@mui/material/Avatar";
+import ProgressTopBar from "../components/progress";
 export default function IndexPage() {
   return (
 
@@ -39,7 +40,19 @@ export default function IndexPage() {
   <Layout>
     {/*<h1>NextAuth.js Example</h1>*/}
 
-    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+    <ProgressTopBar/>
+    <br/>
+    <Stack direction="row" spacing={2}>
+      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+     <a>Quiz Name</a>
+    </Stack>
+    <Stack spacing={2}>
+      <a>Item 1</a>
+      <a>Item 2</a>
+      <a>Item 3</a>
+      <a>Item 4</a>
+    </Stack>
+
     <div style={{width: "75%", height: "25%"}}>
 
     </div>
