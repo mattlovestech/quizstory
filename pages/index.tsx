@@ -2,9 +2,9 @@ import Layout from "../components/layout"
 import React from "react";
 import Head from 'next/head'
 import Button from '@mui/material/Button'
-import {Stack} from "@mui/material";
+import {IconButton, Stack} from "@mui/material";
 import SmallAvatar from "@mui/material/Avatar";
-
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import Avatar from "@mui/material/Avatar";
 import ProgressTopBar from "../components/progress";
 export default function IndexPage() {
@@ -42,9 +42,12 @@ export default function IndexPage() {
 
     <ProgressTopBar/>
     <br/>
-    <Stack direction="row" spacing={2}>
+    <Stack  direction="row"
+            justifyContent="space-between"
+            alignItems="center" spacing={2}>
       <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
      <a>Quiz Name</a>
+      <MoreHorizIcon/>
     </Stack>
     <Stack spacing={2}>
       <a>Item 1</a>
