@@ -39,8 +39,8 @@ iframe {
   margin: 0 auto;
   /*background-image: url('https://media4.giphy.com/media/YtK26h4kujo9kDRRqj/giphy.gif?cid=ecf05e47d986c120v05d4aihdw7mg7gkolshqt61lamj707n&rid=giphy.gif');*/
   background-image: url('https://media1.giphy.com/media/pOLspHmrKmQmc/giphy.gif?cid=ecf05e47mt0ym24xu07n7p83r1ce9fumsapizevxgxov16d0&rid=giphy.gif&ct=g');
-
+  height: 100vh;
+  width: auto;
   background-size: cover;
   background-color: black;
-  min-height: 100%;
 }
