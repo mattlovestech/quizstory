@@ -39,7 +39,7 @@ iframe {
   margin: 0 auto;
   /*background-image: url('https://media4.giphy.com/media/YtK26h4kujo9kDRRqj/giphy.gif?cid=ecf05e47d986c120v05d4aihdw7mg7gkolshqt61lamj707n&rid=giphy.gif');*/
  background-image: url("https://theundefeated.com/wp-content/uploads/2017/10/bl1_0597_yas.gif");
-  width: 100%;
+
   max-width: 100vw;
   height: 100vh;
   background-size: cover;
