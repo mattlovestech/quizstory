@@ -12,11 +12,12 @@ import Button from "@mui/material/Button";
 import {Send, Share, ShareLocation} from "@mui/icons-material";
 
 export default function Quiz() {
+    const url = 'https://giphy.com/gifs/h0nestyb-college-campus-honesty-b-wPNtqh5lRQ6LSdGgcz/fullscreen'
     return (
 
         <>
 
-        <div className="backgroundGif">
+        <div className="backgroundGif" style={{backgroundImage: `url('https://theundefeated.com/wp-content/uploads/2017/10/lewis-drummajor.gif')`}}>
             <br/>
             <ProgressTopBar/>
             <br/>
