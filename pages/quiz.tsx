@@ -10,14 +10,17 @@ import Box from "@mui/material/Box";
 import Header from "../components/header";
 import Button from "@mui/material/Button";
 import {Send, Share, ShareLocation} from "@mui/icons-material";
+import Head from "next/head";
 
 export default function Quiz() {
     const url = 'https://giphy.com/gifs/h0nestyb-college-campus-honesty-b-wPNtqh5lRQ6LSdGgcz/fullscreen'
     return (
 
         <>
-
-        <div className="backgroundGif" style={{backgroundImage: `url('https://theundefeated.com/wp-content/uploads/2017/10/lewis-drummajor.gif')`}}>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            </Head>
+        <div className="backgroundGif">
             <br/>
             <ProgressTopBar/>
             <br/>
