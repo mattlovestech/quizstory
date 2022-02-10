@@ -53,7 +53,7 @@ export default function IndexPage() {
     <div style={{width: "75%", height: "25%"}}>
 
     </div>
-  <Button style={{}}>Send Message</Button> <button>send</button>
+  <Button style={{}}>Send aaMessage</Button> <button>send</button>
   </Layout>
   </>
 

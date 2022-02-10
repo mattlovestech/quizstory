@@ -16,7 +16,7 @@ export default function Quiz() {
 
         <>
 
-            <br/>
+        <div className="backgroundGif">
             <br/>
             <ProgressTopBar/>
             <br/>
@@ -52,7 +52,7 @@ export default function Quiz() {
                         color: "black"
                     }}>
                         <Avatar sx={{ background: "white", color: "black", border: "1px black solid", width: 24, height: 24, marginRight: "15px"}} alt="A" src="/static/images/avatar/1.jpg" />
-                        <a>Answer...</a>
+                        <a>Answer......</a>
                     </Button>
                     <Button color={"success"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start" , borderRadius: "25px"}}>
                         <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="B" src="/static/images/avatar/1.jpg" />
@@ -99,6 +99,8 @@ export default function Quiz() {
                 </Button>
 
             </div>
+        </div>
+
         </>
 
     )
