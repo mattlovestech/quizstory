@@ -9,60 +9,97 @@ import {textAlign} from "@mui/system";
 import Box from "@mui/material/Box";
 import Header from "../components/header";
 import Button from "@mui/material/Button";
+import {Send, Share, ShareLocation} from "@mui/icons-material";
 
 export default function Quiz() {
     return (
 
-       <>
+        <>
 
-           <br/>
-           <br/>
-       <ProgressTopBar/>
-       <br/>
-           <Stack  direction="row"
-                   justifyContent="space-between"
-                   alignItems="center" spacing={2}>
-               <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-               <h3>Insert Quiz Name</h3>
-               <MoreHorizIcon/>
-           </Stack>
-           <br/>
-           <div  style={{textAlign: "center"}}>
-               <img height="200px"
+            <br/>
+            <br/>
+            <ProgressTopBar/>
+            <br/>
+            <Stack  direction="row"
+                    justifyContent="space-between"
+                    alignItems="center" spacing={2}>
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                <h3>Insert Quiz Name</h3>
+                <MoreHorizIcon/>
+            </Stack>
+            <br/>
+            <div  style={{textAlign: "center"}}>
+                <img height="160px"
 
-                    alt="hbcu gif text"
-                    src={"https://media1.giphy.com/media/rcTvOttwC4wDVn5G1t/giphy.gif?cid=ecf05e47hstgngv6j76gb6gg1c55v3dg9r7pfknsj7pvchoq&rid=giphy.gif&ct=s"}/>
-           </div>
-           <br/>
-           <div style={{marginLeft: "10%", marginRight: "10%"}}>
-           <Box style={{color: "white", padding: "10px",textAlign: "center", background: "black", borderTopLeftRadius: "25px", borderTopRightRadius: "25px"}}>
-               <h3>Insert Question...
-               </h3>
-           </Box>
-           <Box style={{textAlign: "center", background: "white", borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px"}}>
-               <br/>
-               <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
-                   <Avatar sx={{ width: 24, height: 24, marginRight: "15px"}} alt="A" src="/static/images/avatar/1.jpg" />
-                   <a>Answer...</a>
-               </Button>
-               <Button color={"success"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start" , borderRadius: "25px"}}>
-                   <Avatar sx={{ width: 24, height: 24, marginRight: "15px"}} alt="B" src="/static/images/avatar/1.jpg" />
-                   <a>Answer...</a>
-               </Button>
-               <Button color={"error"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
-                       <Avatar sx={{ width: 24, height: 24, marginRight: "15px"}} alt="C" src="/static/images/avatar/1.jpg" />
-                       <a>Answer...</a>
-               </Button>
-               <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
-                   <Avatar sx={{ width: 24, height: 24, marginRight: "15px"}} alt="D" src="/static/images/avatar/1.jpg" />
-                   <a>Answer...</a>
-               </Button>
-               <br/> <br/>
+                     alt="hbcu gif text"
+                     src={"https://media2.giphy.com/media/iFhPIGNQ1Ct50JNwy2/giphy.gif?cid=ecf05e47pjddk295tvkm8885uzfvqptyig2lho5idt50ja3i&rid=giphy.gif&ct=s"}/>
+            </div>
+            <br/>
+            <div style={{marginLeft: "10%", marginRight: "10%"}}>
+                <Box style={{color: "white", padding: "5px",textAlign: "center",
+                    background: "black",
+                    borderTopLeftRadius: "25px", borderTopRightRadius: "25px"}}>
+                    <h3>Insert Question...</h3>
+                </Box>
+                <Box style={{textAlign: "center",
+                    background: "rgba(255, 255, 255, 0.3)",
+                    borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px"}}>
+                    <br/>
+                    <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px", width: "75%",
+                        justifyContent: "flex-start",
+                        borderRadius: "25px",
+                        background: "white",
+                        color: "black"
+                    }}>
+                        <Avatar sx={{ background: "white", color: "black", border: "1px black solid", width: 24, height: 24, marginRight: "15px"}} alt="A" src="/static/images/avatar/1.jpg" />
+                        <a>Answer...</a>
+                    </Button>
+                    <Button color={"success"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start" , borderRadius: "25px"}}>
+                        <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="B" src="/static/images/avatar/1.jpg" />
+                        <a>Answer...</a>
+                    </Button>
+                    <Button color={"error"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
+                        <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="C" src="/static/images/avatar/1.jpg" />
+                        <a>Answer...</a>
+                    </Button>
+                    <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px",
+                        width: "75%", justifyContent: "flex-start",
+                        background: "white",
+                        color: "black",
+                        borderRadius: "25px"}}>
+                        <Avatar sx={{ width: 24, height: 24, marginRight: "15px", background: "white", color: "black",border: "1px black solid",}} alt="D" src="/static/images/avatar/1.jpg" />
+                        <a>Answer...</a>
+                    </Button>
+                    <br/> <br/>
 
-       </Box>
-           </div>
+                </Box>
+            </div>
 
-       </>
+            <div style={{textAlign: "center", marginTop: "20px"}}>
+
+                <Button  variant={"outlined"} style={{
+                    marginBottom: "15px",
+                    marginRight: "15px",
+                    justifyContent: "flex-start",
+                    borderRadius: "25px",
+                    color: "white",
+                    border: "2px white solid"
+                }}>
+                    Provide Feedback
+                </Button>
+
+                <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px",
+                    justifyContent: "flex-start",
+                    borderRadius: "25px",
+                    background: "rgba(255, 255, 255, 0.3)",
+                    color: "white",
+
+                }}>
+                    Share <Send style={{marginLeft: "5px"}}/>
+                </Button>
+
+            </div>
+        </>
 
     )
 }
