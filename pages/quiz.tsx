@@ -18,21 +18,22 @@ function handleAnswer() {
 }
 
     const url = 'https://giphy.com/gifs/h0nestyb-college-campus-honesty-b-wPNtqh5lRQ6LSdGgcz/fullscreen'
+    const quizName = "Howard University 101"
     return (
 
         <>
 
-           <MetaHead title="Insert Quiz Name"/>
+           <MetaHead title={quizName}/>
 
         <div className="backgroundGif">
             <br/>
             <ProgressTopBar value={50}/>
             <br/>
-            <Stack  direction="row"
+            <Stack  style={{background: "rgba(0,0,0,0.3)", color: "white", borderRadius: "25px", paddingRight: "10px"}} direction="row"
                     justifyContent="space-between"
                     alignItems="center" spacing={2}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                <h3>Insert Quiz Name</h3>
+                <Avatar alt="Remy Sharp" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/89180874_10156021704097185_8976838045026222080_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=XkSJpqgoFCYAX8tbhcM&_nc_ht=scontent-atl3-1.xx&oh=00_AT_XW19eMvwf40xG3n5ltazzR19jb0wKnqw0Plr2Gi9djA&oe=622D1A3B" />
+                <h3>{quizName}</h3>
                 <MoreHorizIcon/>
             </Stack>
             <br/>

@@ -6,7 +6,7 @@ import { LinearProgress } from '@material-ui/core';
 
 export default function ProgressTopBar(props: any) {
     return (
-        <Box sx={{ width: '100%', height: "20px"}} >
+        <Box sx={{ width: '100%'}} >
     <LinearProgress  style={{color: "red"}}  variant="determinate"
                     value={props["value"]} />
 
