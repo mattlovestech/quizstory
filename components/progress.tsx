@@ -1,7 +1,8 @@
 
 import Box from '@mui/material/Box';
 import React, { Component } from 'react';
-import { LinearProgress } from '@material-ui/core';
+import {LinearProgress} from "@mui/material";
+
 
 export default function ProgressTopBar(props: any) {
     return (
