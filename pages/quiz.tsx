@@ -48,7 +48,7 @@ function handleAnswer() {
                 <Box style={{color: "white", padding: "5px",textAlign: "center",
                     background: "black",
                     borderTopLeftRadius: "25px", borderTopRightRadius: "25px"}}>
-                    <h3>What city is Howard University located in? lol</h3>
+                    <h3>What city is Howard University located in?</h3>
                 </Box>
                 <Box style={{textAlign: "center",
                     background: "rgba(255, 255, 255, 0.3)",
