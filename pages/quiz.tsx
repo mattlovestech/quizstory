@@ -11,9 +11,10 @@ import Header from "../components/header";
 import Button from "@mui/material/Button";
 import {Send, Share, ShareLocation} from "@mui/icons-material";
 import Head from "next/head";
+import MetaHead from "../components/metaHead";
 export default function Quiz() {
 function handleAnswer() {
-    alert("a")
+   window.open("/results")
 }
 
     const url = 'https://giphy.com/gifs/h0nestyb-college-campus-honesty-b-wPNtqh5lRQ6LSdGgcz/fullscreen'
@@ -21,9 +22,8 @@ function handleAnswer() {
 
         <>
 
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            </Head>
+           <MetaHead title="Insert Quiz Name"/>
+
         <div className="backgroundGif">
             <br/>
             <ProgressTopBar/>
