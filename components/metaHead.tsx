@@ -11,8 +11,10 @@ import Head from "next/head";
 export default function MetaHead(props:any) {
 
     return (
+
     <>
         <Head>
+
             <title>HBCU Trivia | {props["title"]}</title>
             <meta name="title" content="Meta Tags — Preview, Edit and Generate"/>
             <meta name="description"

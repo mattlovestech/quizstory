@@ -61,15 +61,15 @@ function handleAnswer() {
                         color: "black"
                     }}>
                         <Avatar sx={{ background: "white", color: "black", border: "1px black solid", width: 24, height: 24, marginRight: "15px"}} alt="A" src="/static/images/avatar/1.jpg" />
-                        <a>Washington D.C.</a>
+                        <a>Atlanta</a>
                     </Button>
                     <Button color={"success"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start" , borderRadius: "25px"}}>
                         <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="B" src="/static/images/avatar/1.jpg" />
-                        <a>Atlanta</a>
+                        <a>Washington D.C.</a>
                     </Button>
                     <Button color={"error"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
                         <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="C" src="/static/images/avatar/1.jpg" />
-                        <a>New York</a>
+                        <a>Houston</a>
                     </Button>
                     <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px",
                         width: "75%", justifyContent: "flex-start",
