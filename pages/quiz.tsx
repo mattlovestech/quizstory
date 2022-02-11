@@ -26,7 +26,7 @@ function handleAnswer() {
 
         <div className="backgroundGif">
             <br/>
-            <ProgressTopBar/>
+            <ProgressTopBar value={50}/>
             <br/>
             <Stack  direction="row"
                     justifyContent="space-between"
