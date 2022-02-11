@@ -11,12 +11,16 @@ import Header from "../components/header";
 import Button from "@mui/material/Button";
 import {Send, Share, ShareLocation} from "@mui/icons-material";
 import Head from "next/head";
-
 export default function Quiz() {
+function handleAnswer() {
+    alert("a")
+}
+
     const url = 'https://giphy.com/gifs/h0nestyb-college-campus-honesty-b-wPNtqh5lRQ6LSdGgcz/fullscreen'
     return (
 
         <>
+
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Head>
@@ -43,28 +47,28 @@ export default function Quiz() {
                 <Box style={{color: "white", padding: "5px",textAlign: "center",
                     background: "black",
                     borderTopLeftRadius: "25px", borderTopRightRadius: "25px"}}>
-                    <h3>Insert Question...</h3>
+                    <h3>What city is Howard University located in?</h3>
                 </Box>
                 <Box style={{textAlign: "center",
                     background: "rgba(255, 255, 255, 0.3)",
                     borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px"}}>
                     <br/>
-                    <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px", width: "75%",
+                    <Button color={"primary"} onClick={handleAnswer} variant={"contained"} style={{marginBottom: "15px", width: "75%",
                         justifyContent: "flex-start",
                         borderRadius: "25px",
                         background: "white",
                         color: "black"
                     }}>
                         <Avatar sx={{ background: "white", color: "black", border: "1px black solid", width: 24, height: 24, marginRight: "15px"}} alt="A" src="/static/images/avatar/1.jpg" />
-                        <a>Answer......</a>
+                        <a>Washington D.C.</a>
                     </Button>
                     <Button color={"success"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start" , borderRadius: "25px"}}>
                         <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="B" src="/static/images/avatar/1.jpg" />
-                        <a>Answer...</a>
+                        <a>Atlanta</a>
                     </Button>
                     <Button color={"error"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
                         <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="C" src="/static/images/avatar/1.jpg" />
-                        <a>Answer...</a>
+                        <a>New York</a>
                     </Button>
                     <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px",
                         width: "75%", justifyContent: "flex-start",
@@ -72,7 +76,7 @@ export default function Quiz() {
                         color: "black",
                         borderRadius: "25px"}}>
                         <Avatar sx={{ width: 24, height: 24, marginRight: "15px", background: "white", color: "black",border: "1px black solid",}} alt="D" src="/static/images/avatar/1.jpg" />
-                        <a>Answer...</a>
+                        <a>Hampton</a>
                     </Button>
                     <br/> <br/>
 
