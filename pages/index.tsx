@@ -1,62 +1,116 @@
 import Layout from "../components/layout"
-import React from "react";
-import Head from 'next/head'
-import Button from '@mui/material/Button'
-import {IconButton, Stack} from "@mui/material";
-import SmallAvatar from "@mui/material/Avatar";
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import Avatar from "@mui/material/Avatar";
 import ProgressTopBar from "../components/progress";
-export default function IndexPage() {
-  return (
+import {Stack} from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import React from "react";
+import Image from "next/image";
+import {textAlign} from "@mui/system";
+import Box from "@mui/material/Box";
+import Header from "../components/header";
+import Button from "@mui/material/Button";
+import {Send, Share, ShareLocation} from "@mui/icons-material";
+import Head from "next/head";
+import MetaHead from "../components/metaHead";
+export default function Quiz() {
+function handleAnswer() {
+   window.open("/results")
+}
 
+    const url = 'https://giphy.com/gifs/h0nestyb-college-campus-honesty-b-wPNtqh5lRQ6LSdGgcz/fullscreen'
+    const quizName = "Howard University 101"
+    return (
 
-<>
-  <Head>
-    <title>Meta Tags — Preview, Edit and Generate</title>
-    <meta name="title" content="Meta Tags — Preview, Edit and Generate"/>
-    <meta name="description"
-          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"/>
+        <>
 
+           <MetaHead title={quizName}/>
 
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://metatags.io/"/>
-    <meta property="og:title" content="Meta Tags — Preview, Edit and Generate"/>
-    <meta property="og:description"
-          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"/>
-    <meta property="og:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
+        <div className="backgroundGif">
+            <br/>
+            <ProgressTopBar value={50}/>
+            <br/>
+            <Stack  style={{background: "rgba(0,0,0,0.3)", color: "white", borderRadius: "25px", paddingRight: "10px"}} direction="row"
+                    justifyContent="space-between"
+                    alignItems="center" spacing={2}>
+                <Avatar alt="Remy Sharp" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/89180874_10156021704097185_8976838045026222080_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=XkSJpqgoFCYAX8tbhcM&_nc_ht=scontent-atl3-1.xx&oh=00_AT_XW19eMvwf40xG3n5ltazzR19jb0wKnqw0Plr2Gi9djA&oe=622D1A3B" />
+                <h3>{quizName}</h3>
+                <MoreHorizIcon/>
+            </Stack>
+            <br/>
+            <div  style={{textAlign: "center"}}>
+                <img height="160px"
 
+                     alt="hbcu gif text"
+                     src={"https://media2.giphy.com/media/iFhPIGNQ1Ct50JNwy2/giphy.gif?cid=ecf05e47pjddk295tvkm8885uzfvqptyig2lho5idt50ja3i&rid=giphy.gif&ct=s"}/>
+            </div>
+            <br/>
+            <div style={{marginLeft: "10%", marginRight: "10%"}}>
+                <Box style={{color: "white", padding: "5px",textAlign: "center",
+                    background: "black",
+                    borderTopLeftRadius: "25px", borderTopRightRadius: "25px"}}>
+                    <h3>What city is Howard University located in?</h3>
+                </Box>
+                <Box style={{textAlign: "center",
+                    background: "rgba(255, 255, 255, 0.3)",
+                    borderBottomLeftRadius: "25px", borderBottomRightRadius: "25px"}}>
+                    <br/>
+                    <Button color={"primary"} onClick={handleAnswer} variant={"contained"} style={{marginBottom: "15px", width: "75%",
+                        justifyContent: "flex-start",
+                        borderRadius: "25px",
+                        background: "white",
+                        color: "black"
+                    }}>
+                        <Avatar sx={{ background: "white", color: "black", border: "1px black solid", width: 24, height: 24, marginRight: "15px"}} alt="A" src="/static/images/avatar/1.jpg" />
+                        <a>Atlanta</a>
+                    </Button>
+                    <Button color={"success"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start" , borderRadius: "25px"}}>
+                        <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="B" src="/static/images/avatar/1.jpg" />
+                        <a>Washington D.C.</a>
+                    </Button>
+                    <Button color={"error"} variant={"contained"} style={{marginBottom: "15px", width: "75%", justifyContent: "flex-start", borderRadius: "25px"}}>
+                        <Avatar sx={{ background: "white", color: "black",border: "1px black solid",width: 24, height: 24, marginRight: "15px"}} alt="C" src="/static/images/avatar/1.jpg" />
+                        <a>Houston</a>
+                    </Button>
+                    <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px",
+                        width: "75%", justifyContent: "flex-start",
+                        background: "white",
+                        color: "black",
+                        borderRadius: "25px"}}>
+                        <Avatar sx={{ width: 24, height: 24, marginRight: "15px", background: "white", color: "black",border: "1px black solid",}} alt="D" src="/static/images/avatar/1.jpg" />
+                        <a>Hampton</a>
+                    </Button>
+                    <br/> <br/>
 
-    <meta property="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:url" content="https://metatags.io/"/>
-    <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate"/>
-    <meta property="twitter:description"
-          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"/>
-    <meta property="twitter:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
-  </Head>
+                </Box>
+            </div>
 
-  <Layout>
-    {/*<h1>NextAuth.js Example</h1>*/}
+            <div style={{textAlign: "center", marginTop: "20px"}}>
 
-    <ProgressTopBar/>
-    <br/>
+                <Button  variant={"outlined"} style={{
+                    marginBottom: "15px",
+                    marginRight: "15px",
+                    justifyContent: "flex-start",
+                    borderRadius: "25px",
+                    color: "white",
+                    border: "2px white solid"
+                }}>
+                    Provide Feedback
+                </Button>
 
-    <Stack spacing={2}>
-      <a>Item 1</a>
-      <a>Item 2</a>
-      <a>Item 3</a>
-      <a>Item 4</a>
-    </Stack>
+                <Button color={"primary"} variant={"contained"} style={{marginBottom: "15px",
+                    justifyContent: "flex-start",
+                    borderRadius: "25px",
+                    background: "rgba(255, 255, 255, 0.3)",
+                    color: "white",
 
-    <div style={{width: "75%", height: "25%"}}>
+                }}>
+                    Share <Send style={{marginLeft: "5px"}}/>
+                </Button>
 
-    </div>
-  <Button style={{}}>Send aaMessage</Button> <button>send</button>
-  </Layout>
-  </>
+            </div>
+        </div>
 
+        </>
 
-  )
+    )
 }
