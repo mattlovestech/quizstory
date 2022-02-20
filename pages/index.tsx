@@ -32,7 +32,7 @@ function handleAnswer() {
                         rel="stylesheet"/>
                     <div className="backgroundGif">
             <br/>
-            <ProgressTopBar value={50}/>
+            <ProgressTopBar/>
             <br/>
             <Stack  style={{background: "transparent", marginBottom: "20px", color: "white", borderRadius: "25px", paddingRight: "10px"}} direction="row"
                     justifyContent="space-between"
@@ -50,31 +50,37 @@ function handleAnswer() {
             <br/>
                         <div style={{textAlign: "center", marginTop: "20px"}}>
 
-                            <Button  href="/quiz" color={"primary"} variant={"contained"} style={{marginBottom: "15px",
+                            <Button  href="/quiz" color={"primary"} variant={"contained"} style={{
                                 justifyContent: "flex-start",
                                 borderRadius: "25px",
                                 background: "rgba(0, 0, 0, 0.65)",
                                 color: "white",
-                                fontSize: "23px",
+                                fontSize: "25px",
+                                fontWeight: "bold",
                                 paddingLeft: "70px",
                                 paddingRight: "60px",
                                 border: "1px white solid",
                                 boxShadow: "1px 3px #000"
-                            }}>
-                               Play now <PlayArrow/>
+                            }}><PlayArrow/>
+                                <div className="">
+                                    <i>Play Now</i>
+                                </div>
+
                             </Button>
 
                         </div>
 
-            <div style={{marginLeft: "10%", marginRight: "10%", marginTop: "80px"}}>
+            <div style={{marginLeft: "10%", marginRight: "10%", marginTop: "60px"}}>
                 <Box style={{textAlign: "center",
-                    background: "rgba(255, 255, 255, 0.3)",
+                    background: "rgba(0, 0, 0, 0.4)",
                     border: "2px white solid",
                     color: "white",
+
               borderRadius: "25px"}}>
                     <br/>
 
                     <div style={{padding: "18px", fontSize: "18px"}}>
+                        <h3 >How it Works</h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Odio pellentesque diam volutpat commodo. Quam vulputate dignissim
@@ -86,7 +92,9 @@ function handleAnswer() {
                         justifyContent: "flex-start",
                         borderRadius: "25px",
                         color: "white",
-                        border: "2px white solid"
+                        border: "2px white solid",
+
+
                     }}>
                       Choose Quiz
                     </Button>
